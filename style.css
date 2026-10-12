@@ -32,3 +32,8 @@
 /* Size visible artwork, rather than the source image canvas. Round marks
    share one diameter; the other marks fit the same optical envelope. */
 .club-page{--logo-size:clamp(64px,6vw,104px)}.emblems{gap:clamp(12px,2vw,32px)}.club-page .emblem{position:relative;width:calc(var(--logo-size)*1.9);height:calc(var(--logo-size)*1.5);flex:0 0 auto;overflow:visible}.club-page .emblem img{position:absolute;left:50%;top:50%;width:calc(var(--logo-size)*var(--logo-width));height:calc(var(--logo-size)*var(--logo-height));max-width:none;object-fit:fill;transform:translate(var(--logo-x),var(--logo-y));transition:filter .2s;filter:drop-shadow(0 5px 6px #14233510)}.club-page .emblem:hover img,.club-page .emblem:focus-visible img{transform:translate(var(--logo-x),var(--logo-y));filter:drop-shadow(0 8px 9px #14233525)}@media(max-width:900px){.club-group{grid-template-columns:1fr;gap:15px}.emblems{justify-content:center;flex-wrap:wrap}.club-label p{margin-bottom:4px}}@media(max-width:600px){.club-page{--logo-size:62px}.emblems{gap:10px 18px;justify-content:flex-start}.club-page .emblem{width:118px;height:98px}}
+
+/* Hide only the screenshot background outside Nash's jersey. Its RGB
+   artwork and grey/orange jersey edges are preserved without conversion. */
+img[src*="steve-nash-reference.png"]{clip-path:inset(0 4.55% 0 2.35%)}
+.jersey .card-name{left:12px;right:12px;bottom:14px;font-size:12px;line-height:1.4;word-break:keep-all;overflow-wrap:normal;text-align:left}.single .uniform-group:not(.compact) .jersey,.signature.single .uniform-group:not(.compact) .jersey{padding-bottom:62px}.player-visual h2{word-break:keep-all;line-height:1.35;font-size:22px}
