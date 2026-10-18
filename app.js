@@ -137,7 +137,8 @@ function showTeams(sport) {
     const section = document.createElement('div'); section.className = 'club-group';
     const label = document.createElement('div'); label.className = 'club-label';
     const title = document.createElement('h2'); title.textContent = row.title;
-    label.append(title);
+    const description = document.createElement('p'); description.textContent = row.description;
+    label.append(title, description);
     const emblems = document.createElement('div'); emblems.className = 'emblems';
     for (const ref of row.images) {
       const button = document.createElement('button');

@@ -18,3 +18,6 @@ dialog::backdrop{background:#17233c75;backdrop-filter:blur(9px)}body:has(dialog[
  #team-dialog{width:min(440px,92vw);max-height:90svh;padding:32px 18px 24px;border-radius:24px}.team-crest{--logo-size:min(150px,39vw);margin:20px auto 22px}#selected-team-name{font-size:21px;line-height:1.35}#team-dialog.has-cap{padding:27px 18px 20px}#team-dialog.has-cap .team-crest{--logo-size:min(125px,32vw,20svh);margin:18px auto 17px}#team-dialog.has-cap #selected-team-name{font-size:19px}#team-cap-panel{padding-top:14px;margin-top:16px}#team-cap-panel h3{font-size:18px;margin-bottom:9px}.cap-image{height:min(110px,17svh)}.cap-image img{width:110px;height:100%;max-height:110px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+
+/* Reference club descriptions: identical copy, size, weight and color. */
+.club-label h2{margin-bottom:7px}.club-label p{font-family:var(--body-font);font-size:10px;font-weight:400;line-height:1.7;color:#757c8c;word-break:keep-all;margin:0}@media(min-width:1600px){.club-label p{font-size:12px}}@media(max-width:800px){.club-label{margin-bottom:14px}}
